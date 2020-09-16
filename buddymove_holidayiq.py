@@ -7,6 +7,7 @@ from sqlalchemy import create_engine
 # Read csv into pandas DataFrame
 df = pd.read_csv('buddymove_holidayiq.csv')
 print(df.head())
+print()
 df.rename(columns={"User Id": "UserID"}, inplace=True)
 print(df.head())
 print()
@@ -91,6 +92,7 @@ print(f"Nature:               {r[2]:0.2f}")
 print(f"Theatre:              {r[3]:0.2f}")
 print(f"Shopping:             {r[4]:0.2f}")
 print(f"Picnic:               {r[5]:0.2f}")
+print()
 
 
 # Tidy up
